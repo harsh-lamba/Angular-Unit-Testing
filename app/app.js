@@ -1,4 +1,4 @@
-require('./externals/angular.min');
+var angular = require('angular');
 var myApp = angular.module("myApp", []);
 myApp.controller("controller", function($scope) {
 	$scope.title = "Angular Unit Testing";
