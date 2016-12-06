@@ -1,0 +1,74 @@
+<div class="container-fluid">
+	<div class="row">
+		<div class="col-sm-12">
+			<button class="btn btn-primary page-product-detail" ng-click="navigateToProductList()"><i class="ace-icon fa fa-reply"></i>&nbsp;Product List</button>
+	        <h4 class="page-header">Products Details for Product ID : {{product.id}}</h4>
+	    </div>
+	</div>
+
+	<div class="row">
+		<div class="col-sm-6">
+		  <table class="table table-striped">
+		    <thead>
+		      <tr>
+		        <th>Key</th>
+		        <th>Value</th>
+		      </tr>
+		    </thead>
+		    <tbody>
+		      <tr >
+		        <td>ID</td>
+		        <td>{{product.id}}</td>
+		      </tr>
+		      <tr>
+		        <td>SKU</td>
+		        <td>{{product.sku}}</td>
+		      </tr>
+		      <tr>
+		        <td>Name</td>
+		        <td>{{product.name}}</td>
+		      </tr>
+		      <tr>
+		        <td>Description</td>
+		        <td>{{product.description}}</td>
+		      </tr>
+		      <tr>
+		        <td>Price</td>
+		        <td>{{product.price}}</td>
+		      </tr>
+		    </tbody>
+		  </table>
+		</div>
+		<div class="col-sm-6">
+		  <table class="table table-striped">
+		  	<thead>
+		      <tr>
+		        <th>Key</th>
+		        <th>Value</th>
+		      </tr>
+		    </thead>
+		    <tbody>
+		      <tr>
+		        <td>mrp</td>
+		        <td>{{product.mrp}}</td>
+		      </tr>
+		      <tr>
+		        <td>Stock</td>
+		        <td>{{product.stock}}</td>
+		      </tr>
+		      <tr>
+		        <td>Image</td>
+		        <td>{{product.image}}</td>
+		      </tr>
+		      <tr>
+		        <td>Packing</td>
+		        <td>{{product.packing}}</td>
+		      </tr>
+		        <td>Status</td>
+		        <td>{{product.status}}</td>
+		      </tr>
+		    </tbody>
+		  </table>
+		</div>
+	</div>
+</div>	
