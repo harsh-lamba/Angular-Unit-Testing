@@ -163,31 +163,22 @@
       "id": 945
     },
     {
-      "name": "Himalaya Baby Oil",
-      "description": "Himalaya Baby Oil",
-      "price": "500",
-      "stock": "5000",
-      "packing": "1L",
+      "name": "Dabur Honey",
+      "description": "Dabur Honey",
+      "price": "150",
+      "stock": "50",
+      "packing": "250gm",
       "status": "Active",
       "id": 946
     },
     {
-      "name": "Johnson Baby Lotion",
-      "description": "Johnson Baby Lotion",
-      "price": "350",
-      "stock": "200",
-      "packing": "100gm",
-      "status": "Active",
-      "id": 948
-    },
-    {
-      "name": "Johnson Baby Soap",
-      "description": "Johnson Baby Soap",
-      "price": "300",
+      "name": "Colgate Toothpaste",
+      "description": "Colgate Toothpaste",
+      "price": "90",
       "stock": "100",
-      "packing": "100gm",
+      "packing": "50gm",
       "status": "Active",
-      "id": 949
+      "id": 947
     }
   ]
 }

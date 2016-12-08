@@ -1,6 +1,6 @@
 // Karma configuration
 // Generated on Sun Nov 20 2016 03:23:20 GMT+0530 (India Standard Time)
-
+var istanbul = require('browserify-istanbul');
 module.exports = function(config) {
   config.set({
 
@@ -16,8 +16,7 @@ module.exports = function(config) {
     // available preprocessors: https://npmjs.org/browse/keyword/karma-preprocessor
     preprocessors: {      
       'app/**/*.js': ['browserify'],
-      'app/**/*.html': ['ng-html2js'],
-      'test/**/!(*.mock).js': ['coverage']
+      'app/**/*.html': ['ng-html2js']
     },
 
 
@@ -36,7 +35,7 @@ module.exports = function(config) {
       'app/**/*.html',
 
       // fixtures
-      {pattern: 'test/mock/*.json', watched: true, served: true, included: false}
+      //{pattern: 'test/mock/*.json', watched: true, served: true, included: false}
     ],
 
 
@@ -47,7 +46,12 @@ module.exports = function(config) {
     browserify: {
       debug: true,
       transform: [ 
-        'brfs'
+        'brfs',
+        istanbul({
+          ignore: ['**/js/*.js',
+                    '**/app/app.js'
+                  ]
+        })
       ]
     },    
 

@@ -7,29 +7,29 @@
         var self = this;
         this.$routerOnActivate = function(next) {
             productAPI.get('products').then(function(data) {
-                $scope.products = data;
+                self.products = data;
             });
         }
-        $scope.navigateToProductDetails = function(product) {
-            this.$ctrl.$router.navigate(['ProductDetail', {
+        this.navigateToProductDetails = function(product) {
+            this.$router.navigate(['ProductDetail', {
                 id: product.id
             }]);
         }
         $scope.product = {};
 
-        $scope.deleteProduct = function(product) {
+        this.deleteProduct = function(product) {
             productAPI.deleteObj("products/" + product.id).then(function(result) {
-                $scope.products = _.without($scope.products, _.findWhere($scope.products, {
+                self.products = _.without(self.products, _.findWhere(self.products, {
                     id: product.id
                 }));
             });
         };
 
         // create a seperate directive  to launch modal pop-up
-        $scope.open = function(p, action) {
+        this.open = function(p, action) {
             // Find maximum id
             if(action == 'add'){
-                var maxId = (_.max($scope.products, function(item){
+                var maxId = (_.max(self.products, function(item){
                     return item.id;
                 })).id;
                 p.maxId = ++maxId;
@@ -46,8 +46,8 @@
             });
             this.modalInstance.result.then(function(selectedObject) {
                 if (selectedObject.save == "insert") {
-                    $scope.products.push(selectedObject);
-                    $scope.products = $filter('orderBy')($scope.products, 'id', 'reverse');
+                    self.products.push(selectedObject);
+                    self.products = $filter('orderBy')(self.products, 'id', 'reverse');
                 } else if (selectedObject.save == "update") {
                     p.description = selectedObject.description;
                     p.price = selectedObject.price;

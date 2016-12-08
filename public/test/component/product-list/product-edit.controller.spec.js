@@ -1,4 +1,4 @@
-/*'use strict';
+'use strict';
 
 describe('Controller: productEditCtrl', function() {
 
@@ -14,8 +14,8 @@ describe('Controller: productEditCtrl', function() {
   var putDeferred;
   var controller;
   // Mock services and spy on methods
-  beforeEach(inject(function($q, _Data_){
-    dataService = _Data_;
+  beforeEach(inject(function($q, _productAPI_){
+    dataService = _productAPI_;
     putDeferred = $q.defer();
   }));
   // Initialize the controller and a mock scope.
@@ -82,4 +82,3 @@ describe('Controller: productEditCtrl', function() {
   });
 
   });
-*/

@@ -1,4 +1,4 @@
-/*'use strict';
+'use strict';
 
 describe('Directive: formElement', function() {
 
@@ -28,12 +28,4 @@ describe('Directive: formElement', function() {
     var label = element.find('label');
     expect(label.text().trim()).toBe('new label');
   });
-
-  describe('Directive link', function() {
-    it('disabled should be true', function() {
-      isolateScope = element.isolateScope();
-      expect(scope.disabled).toBeFalsy();
-    });
-  });
 });
-*/

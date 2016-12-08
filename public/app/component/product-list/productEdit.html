@@ -13,18 +13,15 @@
             <textarea class="form-control" name="description" placeholder="DESCRIPTION" ng-model="product.description">{{product.description}}</textarea>
         </form-element>
         <form-element label="PRICE" mod="product">
-            <input type="text" name="price" class="form-control" placeholder="PRICE" ng-model="product.price" only-numbers/>
-            <small class="errorMessage" ng-show="product_form.price.$dirty && product_form.price.$invalid"> Enter the price.</small>
+            <input type="text" name="price" class="form-control" placeholder="PRICE" ng-model="product.price"/>
         </form-element>
 
         <form-element label="STOCK" mod="product">
-            <input type="text" name="stock" class="form-control" placeholder="STOCK" ng-model="product.stock" only-numbers/>
-            <small class="errorMessage" ng-show="product_form.stock.$dirty && product_form.stock.$invalid"> Enter the available stock.</small>
+            <input type="text" name="stock" class="form-control" placeholder="STOCK" ng-model="product.stock"/>
         </form-element>
 
         <form-element label="PACKING" mod="product">
             <input type="text" name="packing" class="form-control" placeholder="PACKING" ng-model="product.packing" />
-            <small class="errorMessage" ng-show="product_form.packing.$dirty && product_form.packing.$invalid"> Enter the Packing.</small>
         </form-element>
 
         <div class="space"></div>
