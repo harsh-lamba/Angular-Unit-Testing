@@ -37,7 +37,7 @@ describe('Component: productList', function () {
     beforeEach(inject(function(_$q_) {
       var $q = _$q_;
       var deferred = $q.defer();
-      jasmine.getJSONFixtures().fixturesPath='base/test/mock';
+      jasmine.getJSONFixtures().fixturesPath='base/test/unit/mock';
       productList = getJSONFixture('product-list.json')
       productsData = productList.products;
       spyOn(productAPI, 'get').and.returnValue(deferred.promise);

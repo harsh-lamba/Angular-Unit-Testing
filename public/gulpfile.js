@@ -10,7 +10,8 @@ gulp.task('default', ['jshint', 'js', 'watch', 'connect']);
 
 // Browserify
 gulp.task('js', function() {
-	return browserify('./app/app.js')
+	return browserify({entries: './app/app.js'},
+		{debug: true})
 		.bundle()
 		.on('error', function(err){
         console.log(err.message);

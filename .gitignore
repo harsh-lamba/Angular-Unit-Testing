@@ -20,6 +20,12 @@ $RECYCLE.BIN/
 #Node Modules
 node_modules
 
+#Output bundle js & test results
+public/test-results
+public/target
+public/Chrome*
+public/Firefox*
+
 # =========================
 # Operating System Files
 # =========================

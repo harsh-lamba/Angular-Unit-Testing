@@ -26,13 +26,16 @@
     "karma-ng-html2js-preprocessor": "^1.0.0",
     "karma-phantomjs-launcher": "^1.0.2",
     "karma-requirejs": "^1.1.0",
+    "protractor": "^4.0.13",
     "requirejs": "^2.3.2",
     "underscore": "^1.8.3",
     "vinyl-source-stream": "^1.1.0",
     "watchify": "^3.7.0"
   },
   "scripts": {
-    "test": "karma start karma.conf.js"
+    "test": "karma start karma.conf.js",
+    "update-webdriver": "webdriver-manager update",
+    "protractor": "protractor protractor.conf.js"
   },
   "repository": {
     "type": "git",
