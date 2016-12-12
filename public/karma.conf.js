@@ -31,11 +31,11 @@ module.exports = function(config) {
       'node_modules/requirejs/require.js',
       'js/angular_1_router.js',
       'js/*.js',
-      'test/**/*.js',
+      'test/unit/**/*.js',
       'app/**/*.html',
 
       // fixtures
-      {pattern: 'test/mock/*.json', watched: true, served: true, included: false}
+      {pattern: 'test/unit/mock/*.json', watched: true, served: true, included: false}
     ],
 
 
