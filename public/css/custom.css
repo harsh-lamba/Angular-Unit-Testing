@@ -8,6 +8,9 @@ body{
 [ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak, .x-ng.ng-cloak {
     display: none;
 }
+.container{
+  width:680px;
+}
 .navbar-default {
  background-color: #fff; 
  border-color: #fff; 
@@ -251,4 +254,18 @@ margin-top: -4.5px;
 .page-product-detail {
   float:left;
   margin-top:42px;
+}
+
+h1.no-padding-top{
+  margin-top:0;
+}
+.big-fonts{
+  font-size:5em;
+}
+.margin-right-big{
+  margin-right:30px
+}
+.jumbotron{
+  padding-top:20px;
+  padding-bottom:20px;
 }
